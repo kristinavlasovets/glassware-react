@@ -1,0 +1,26 @@
+
+.home {
+  margin-top: 25px;
+}
+
+.home h1 {
+  font-family: "Michroma", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 65px;
+}
+
+.home_title {
+    display: block;
+    height: 65px;
+    padding: 5vw;
+    background: rgb(112, 121, 154);
+    color: #FFFFFF;
+    padding: 5vw;
+}
+
+.home_wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
