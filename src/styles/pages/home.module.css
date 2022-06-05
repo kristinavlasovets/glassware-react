@@ -1,26 +1,19 @@
-
 .home {
   margin-top: 25px;
 }
 
-.home h1 {
-  font-family: "Michroma", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 65px;
-}
-
 .home_title {
-    display: block;
-    height: 65px;
-    padding: 5vw;
-    background: rgb(112, 121, 154);
-    color: #FFFFFF;
-    padding: 5vw;
+  display: block;
+  padding: 5vw;
+  font-family: 'Rozha One', serif;
+  font-size: 64px;
+  color: rgb(112, 121, 154);
 }
 
 .home_wrapper {
   display: flex;
+  width: 95vw;
+  margin: 0 auto;
   justify-content: space-around;
   flex-wrap: wrap;
 }

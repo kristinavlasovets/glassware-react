@@ -4,13 +4,13 @@
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  font-family: "Michroma", sans-serif;
-  font-size: 18px;
+  font-family: 'Rozha One', serif;
+  font-size: 32px;
   z-index: 10;
 }
 
 nav {
-  margin-left: 16px;
+  margin-left: 4vw;
 }
 
 nav ul {
@@ -22,10 +22,9 @@ nav ul {
 
 nav li {
   position: relative;
-
   padding: 0 16px;
   text-decoration: none;
-  color: #2d4558;
+  color: rgb(161, 143, 122);
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -33,22 +32,22 @@ nav li {
 nav li:after {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
   height: 2px;
   width: 0;
   left: 50%;
   margin-top: 20px;
-  background-color: #2d4558;
+  background-color: rgb(112, 121, 154);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
 nav li:hover:after {
-  color: #000000;
+  color: rgb(112, 121, 154);
   width: 100%;
   left: 0;
 }
 
 nav li:hover {
-  color: #000000;
+  color: rgb(112, 121, 154);
   cursor: pointer;
 }

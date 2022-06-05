@@ -1,0 +1,68 @@
+{
+  "glassware": [
+    {
+      "id": 0,
+      "title": "Hand Blown Glass Japanese Nested Sake Set",
+      "price": 189,
+      "src": "./assets/img/1.jpeg",
+      "inStock": true,
+      "description": "Sake, anyone? Well, here’s a set we can’t wait to pull out at cocktail hour. Every piece you see is hand-blown in Chiba, Japan, by master artisans who pay meticulous attention to every detail (no wonder they nest so nicely). Those glasses are sized just right for saké, while that bottle is just the ticket to get things pouring. Oh, and the large glass? That doubles as a dish for your snacks, too. This lineup comes in three dazzling hues—we’ll leave you to decide which will shine brightest on your table."
+    },
+    {
+      "id": 1,
+      "title": "IVV Italian Retro Cocktail Glasses",
+      "price": 65,
+      "src": "/img/2c.gif",
+      "inStock": true,
+      "description": "Sparkle & sip. Take one look at these retro-inspired glasses, and it will probably come as no surprise that they’re handmade by master Italian glassmakers. Every goblet and tumbler here gets its shine from blown lead-free glass, plus added texture all over. (We can’t stop gazing at the amber hue.) Pour in a splash of wine or water, if you please—either way, these are sure to become the talk of the table. We're going wild mixing those tones and even serving ice cream in the footed option for a little extra flair."
+    },
+    {
+      "id": 2,
+      "title": "French Tightrope Stackable Glasses",
+      "price": 26,
+      "src": "/img/3.jpeg",
+      "inStock": true,
+      "description": "On the up and up. We’d like to write a love letter to these vessels, but we’ll tell you about them instead. Dubbed the Funambule glasses (funambule means tightrope in French—who knew?) they’ve got a modern stair-step shape that lets them stack up to save cabinet space. Another bonus? Because of those bottom proportions, they’re easier for little hands to hold. To top it off, they’re built from tempered glass, which is up to five times stronger than typical, conventional glass. Good things are in store for your everyday sips."
+    },
+    {
+      "id": 3,
+      "title": "Mesa Acrylic Outdoor Drinkware",
+      "price": 54,
+      "src": "/img/4.jpeg",
+      "inStock": true,
+      "description": "Drinks all around. Outdoor happy hours will become a regular thing once you get your hands on this drinkware. Part of TarHong’s Mesa collection, each piece is made of acrylic—not glass—so it’s durable, shatterproof, and dishwasher safe. (We haven’t even gotten to that pretty fluted pattern.) There’s a double old fashioned size along with tall tumblers and stacking goblets for any and every drink. Now, how ‘bout a round of gin cocktails?"
+    },
+    {
+      "id": 4,
+      "title": "Serax Fish & Fish Bottle by Paola Navone",
+      "price": 50,
+      "src": "/img/5c.jpeg",
+      "inStock": false,
+      "description": "Something’s fishy here. If you’re lured by this herring-shaped bottle, it’s not just you. Turns out it’s been making waves all over Europe. Part of Serax’s Fish & Fish collection, it was designed by award-winning Italian artist Paola Navone (that explains it). The green tint you see is inspired by Depression-Era glassware, and it’s got a just-right weight for an oh-so satisfying pour. You can use it as a carafe, of course—in which case, better snap up the matching glasses. But it’ll moonlight as a vase between sipping sessions, too."
+    },
+    {
+      "id": 5,
+      "title": "Vintage-Inspired Etched Martini & Cocktail Glasses",
+      "price": 68,
+      "src": "/img/6.jpeg",
+      "inStock": true,
+      "description": "Instant heirlooms. It’s no coincidence that these glasses look like they were pulled right from your grandmother’s china cabinet. They were inspired by real-deal family heirlooms—the ones handed down to Founder Amanda Hesser’s husband, to be exact. Each delicate vessel here is etched with a fanciful floral pattern all around (cue the antique, vintage vibes). They’re coming in shapes for every drink, too: a martini, a coupe, and a goblet. Oh, and did we mention you can only snag them here? Pretty exclusive if we do say so ourselves. Set a few of your new finds on the table, and don’t be surprised if you get asked which side of the family they came from."
+    },
+    {
+      "id": 6,
+      "title": "Estelle Hand-Blown Colored Wine Glasses (Set of 6)",
+      "price": 170,
+      "src": "/img/7.jpeg",
+      "inStock": true,
+      "description": "Just like a sunset. Well, color us smitten by this sunset-hued stemware. Fun fact: It’s inspired by its maker’s grandmother, Estelle, who loved to snatch up colored glass and other finds at antique shops. There are two shapes for whatever you happen to be pouring (stemmed wine glass, stemless, your pick). And the kicker? Everything you see comes all the way from Poland, where it was hand-blown by artisans at a company with a rich, 100-plus-year-old history. We’ll raise a glass to that."
+    },
+    {
+      "id": 7,
+      "title": "Schott Zwiesel Pure Martini Glasses",
+      "price": 72,
+      "src": "/img/8.jpeg",
+      "inStock": true,
+      "description": "Extra olives, please. Our recipe for a thoroughly modern martini? Shake it up, then pour it into one of these glasses. Part of Fortessa’s Pure collection, each piece here has a dramatically angled bowl and a sturdy stem down below. Speaking of sturdy, let’s talk about what they’re all made of: It’s Schott Zwiesel Tritan crystal, which has zirconium for extra shine and titanium for a boost of strength. (No wonder some call it the world’s best crystal.) You can send ‘em through the dishwasher when all is said and done—that means more time for toasting."
+    }
+  ]
+}
