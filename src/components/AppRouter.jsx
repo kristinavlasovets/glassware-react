@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Home from '../pages/Home';
-import ProductPage from '../pages/ProductPage';
-import AboutPage from '../pages/AboutPage';
-import ErrorPage from '../pages/ErrorPage';
+import {Home} from '../pages/Home';
+import {ProductPage} from '../pages/ProductPage';
+import {AboutPage} from '../pages/AboutPage';
+import {ErrorPage} from '../pages/ErrorPage';
 import {Route, Routes} from 'react-router-dom';
 
 export default class AppRouter extends Component {

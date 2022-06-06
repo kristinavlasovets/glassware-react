@@ -1,7 +1,7 @@
 import React from 'react';
 import ButtonCSS from '../styles/components/button.module.css';
 
-export const Button = ({className}) => {
+export const Button = ({className, text}) => {
   const btnClass = className + ' ' + ButtonCSS.button;
-  return <button className={btnClass}>Add to cart</button>;
+  return <button className={btnClass}>{text}</button>;
 };

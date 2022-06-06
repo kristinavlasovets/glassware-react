@@ -1,6 +1,6 @@
 import React from "react";
 import AppRouter from "./components/AppRouter.jsx";
-import Header from "./components/Header.jsx";
+import {Header} from "./components/Header.jsx";
 
 function App() {
   return (

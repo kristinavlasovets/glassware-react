@@ -1,25 +1,32 @@
-import React, {useState} from 'react';
-import ProductCardCSS from '../styles/components/productCard.module.css';
-import {Button} from './Button';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import ProductCardCSS from "../styles/components/productCard.module.css";
+import { Button } from "./Button";
 
-function ProductCard(props) {
+export const ProductCard = (props) => {
   return (
     <div className={ProductCardCSS.product_card_wrapper}>
       <div className={ProductCardCSS.product_card_img}>
-        <img
-          src={props.src}
-          alt="product"
-          className={ProductCardCSS.out_of_stock_img}
-        />
-        <p className={ProductCardCSS.out_of_stock_tag}>out of stock</p>
+          <Link to="/productPage">
+          <img
+            src={props.src}
+            alt="product"
+            className={props.inStock ? "" : ProductCardCSS.out_of_stock_img}
+          />
+          </Link>
+        <p className={ProductCardCSS.out_of_stock_tag}>
+          {props.inStock ? "" : "Out of stock"}
+        </p>
       </div>
       <div className={ProductCardCSS.product_card_description}>
-        <h1 className={ProductCardCSS.out_of_stock_text}>{props.name}</h1>
-        <h2 className={ProductCardCSS.out_of_stock_text}>${props.price}</h2>
+        <Link to="/productPage" style={{ textDecoration: 'none', color: 'rgb(161, 143, 122)' }}><h1>{props.name}</h1></Link>
+        <h2>${props.price}</h2>
       </div>
-      <Button className={ProductCardCSS.product_button} />
+      <Button
+        text={props.inStock ? "Add to  cart" : "Out of stock"}
+        className={ProductCardCSS.product_button}
+      />
     </div>
   );
 }
 
-export default ProductCard;

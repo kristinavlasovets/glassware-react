@@ -1,11 +1,11 @@
 import React from 'react';
+import ErrorCSS from '../styles/pages/error.module.css';
 
-function ErrorPage() {
+export const ErrorPage = () => {
   return (
-    <div>
-      Something went wrong. There is no such URL
+    <div className={ErrorCSS.error_wrapper}>
+      <p className={ErrorCSS.error}>Something went wrong. There is no such URL 🙃</p>
     </div>
   );
 }
 
-export default ErrorPage;

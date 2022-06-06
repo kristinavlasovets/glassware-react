@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import ProductCard from '../components/ProductCard';
-
+import {ProductCard }from '../components/ProductCard';
 import IndexCSS from '../styles/pages/home.module.css';
 import HomeCSS from '../styles/pages/home.module.css';
 
-function Home() {
+export const  Home = () => {
   const [glassware, setGlassware] = useState([]);
 
   const getData = async (url) => {
@@ -28,6 +27,8 @@ function Home() {
                 name={item.title}
                 src={item.src}
                 price={item.price}
+                inStock={item.inStock}
+                description={item.description}
               />
             ))}
         </div>
@@ -35,5 +36,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

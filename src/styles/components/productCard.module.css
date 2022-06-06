@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: column;
   background: #ffffff;
+  color: rgb(161, 143, 122);
   max-width: 395px;
-  height: 455px;
+  height: 555px;
   padding: 16px;
   margin-bottom: 100px;
   z-index: 1;
@@ -40,17 +41,6 @@
   color: #ffffff;
 }
 
-.out_of_stock_text {
-  color: rgb(161, 143, 122);
-}
-
-.green_cart_icon {
-  position: absolute;
-  width: 55px;
-  right: 9%;
-  top: 67%;
-  display: none;
-}
 
 .product_card_description {
   margin-top: 25px;
@@ -58,11 +48,13 @@
 }
 
 .product_card_description h1 {
+  height: 40px;
   font-weight: 300;
   font-size: 18px;
 }
 
 .product_card_description h2 {
+  height: 40px;
   margin-top: 5px;
   font-weight: 500;
   font-size: 28px;

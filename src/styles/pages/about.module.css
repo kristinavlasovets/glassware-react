@@ -1,0 +1,31 @@
+.about_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: 0 auto 80px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 18px;
+    color: rgb(161, 143, 122);
+  }
+  .about_wrapper p {
+      margin: 0px 80px;
+      padding-left: 50px;
+      border-left: 2px solid rgb(161, 143, 122);
+  }
+
+  .about_img {
+      display: block;
+      width: 600px;
+      margin: 0 auto;
+  }
+  .about_title {
+    margin-top: 25px;
+    display: block;
+    padding: 5vw;
+    font-family: 'Rozha One', serif;
+    font-size: 26px;
+    color: rgb(112, 121, 154);
+  }
+  
