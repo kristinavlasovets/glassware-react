@@ -3,7 +3,7 @@ import {ProductCard }from '../components/ProductCard';
 import IndexCSS from '../styles/pages/home.module.css';
 import HomeCSS from '../styles/pages/home.module.css';
 
-export const  Home = () => {
+export const  Home = ({props}) => {
   const [glassware, setGlassware] = useState([]);
 
   const getData = async (url) => {
@@ -15,6 +15,8 @@ export const  Home = () => {
   useEffect(() => {
     getData('./db.json');
   }, []);
+
+  console.log(glassware)
   return (
     <div className={IndexCSS.container}>
       <div className={HomeCSS.home}>

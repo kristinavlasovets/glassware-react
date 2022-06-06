@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import ProductCardCSS from "../styles/components/productCard.module.css";
 import { Button } from "./Button";
@@ -7,7 +7,7 @@ export const ProductCard = (props) => {
   return (
     <div className={ProductCardCSS.product_card_wrapper}>
       <div className={ProductCardCSS.product_card_img}>
-          <Link to="/productPage">
+          <Link to={`/glassware/:${props.id}`}>
           <img
             src={props.src}
             alt="product"
@@ -19,7 +19,7 @@ export const ProductCard = (props) => {
         </p>
       </div>
       <div className={ProductCardCSS.product_card_description}>
-        <Link to="/productPage" style={{ textDecoration: 'none', color: 'rgb(161, 143, 122)' }}><h1>{props.name}</h1></Link>
+        <Link to={`/glassware/:${props.id}`} style={{ textDecoration: 'none', color: 'rgb(161, 143, 122)' }}><h1>{props.name}</h1></Link>
         <h2>${props.price}</h2>
       </div>
       <Button

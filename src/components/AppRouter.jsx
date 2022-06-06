@@ -1,41 +1,35 @@
-import React, {Component} from 'react';
-import {Home} from '../pages/Home';
-import {ProductPage} from '../pages/ProductPage';
-import {AboutPage} from '../pages/AboutPage';
-import {ErrorPage} from '../pages/ErrorPage';
-import {Route, Routes} from 'react-router-dom';
+import React, { Component } from "react";
+import { Home } from "../pages/Home";
+import { ProductPage } from "../pages/ProductPage";
+import { AboutPage } from "../pages/AboutPage";
+import { ErrorPage } from "../pages/ErrorPage";
+import { Route, Routes } from "react-router-dom";
 
-export default class AppRouter extends Component {
-  publicRoutes = [
+export const AppRouter = (props) => {
+  const publicRoutes = [
     {
-      path: '/',
+      path: "/",
       element: Home,
     },
     {
-      path: '/productPage',
+      path: `/glassware/:${props.id}`,
       element: ProductPage,
     },
     {
-      path: '/aboutPage',
+      path: "/aboutPage",
       element: AboutPage,
     },
     {
-      path: '/*',
+      path: "/*",
       element: ErrorPage,
     },
   ];
 
-  render() {
-    return (
-      <Routes>
-        {this.publicRoutes.map((route) => (
-          <Route
-            key={route.path}
-            path={route.path}
-            element={<route.element />}
-          />
-        ))}
-      </Routes>
-    );
-  }
-}
+  return (
+    <Routes>
+      {publicRoutes.map((route) => (
+        <Route key={route.path} path={route.path} element={<route.element />} />
+      ))}
+    </Routes>
+  );
+};

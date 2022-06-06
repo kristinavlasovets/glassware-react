@@ -1,9 +1,31 @@
-import React from "react";
+import React, {useEffect, useState} from 'react';
+import { useParams } from "react-router-dom";
 import { Button } from "../components/Button";
 import IndexCSS from "../styles/pages/home.module.css";
 import ProductPageCSS from "../styles/pages/product.module.css";
 
-export const ProductPage = (props) => {
+export const ProductPage = ({props}) => {
+
+  const [glassware, setGlassware] = useState([]);
+
+  const getData = async (url) => {
+    const response = await fetch(url);
+    const {glassware} = await response.json();
+    setGlassware(glassware);
+  };
+
+  useEffect(() => {
+    getData('./db.json');
+  }, []);
+
+
+  console.log(glassware)
+  
+
+  const params = useParams()
+  const currentGlass = glassware && glassware.find(item => item.id === params.id)
+  console.log(currentGlass)
+
   return (
     <div className={IndexCSS.container}>
       <div className={ProductPageCSS.product_page}>
@@ -38,7 +60,7 @@ export const ProductPage = (props) => {
 
           <div className={ProductPageCSS.product_page_info}>
             <div className={ProductPageCSS.product_page_title}>
-              <p>Five Two Stackable Glassware</p>
+              <p>NAME</p>
             </div>
 
             <div className={ProductPageCSS.product_page_size_wrapper}>
