@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {ProductCard }from '../components/ProductCard';
+import {ProductCard} from '../components/ProductCard';
 import IndexCSS from '../styles/pages/home.module.css';
 import HomeCSS from '../styles/pages/home.module.css';
 
-export const  Home = ({props}) => {
+export const Home = () => {
   const [glassware, setGlassware] = useState([]);
 
   const getData = async (url) => {
@@ -16,7 +16,6 @@ export const  Home = ({props}) => {
     getData('./db.json');
   }, []);
 
-  console.log(glassware)
   return (
     <div className={IndexCSS.container}>
       <div className={HomeCSS.home}>
@@ -26,6 +25,7 @@ export const  Home = ({props}) => {
             glassware.map((item) => (
               <ProductCard
                 key={item.id}
+                id={item.id}
                 name={item.title}
                 src={item.src}
                 price={item.price}
@@ -37,4 +37,4 @@ export const  Home = ({props}) => {
       </div>
     </div>
   );
-}
+};

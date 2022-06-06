@@ -1,26 +1,26 @@
-import React, { Component } from "react";
-import { Home } from "../pages/Home";
-import { ProductPage } from "../pages/ProductPage";
-import { AboutPage } from "../pages/AboutPage";
-import { ErrorPage } from "../pages/ErrorPage";
-import { Route, Routes } from "react-router-dom";
+import React, {Component} from 'react';
+import {Home} from '../pages/Home';
+import {ProductPage} from '../pages/ProductPage';
+import {AboutPage} from '../pages/AboutPage';
+import {ErrorPage} from '../pages/ErrorPage';
+import {Route, Routes} from 'react-router-dom';
 
-export const AppRouter = (props) => {
+export const AppRouter = () => {
   const publicRoutes = [
     {
-      path: "/",
+      path: '/',
       element: Home,
     },
     {
-      path: `/glassware/:${props.id}`,
+      path: `/glassware/:id`,
       element: ProductPage,
     },
     {
-      path: "/aboutPage",
+      path: '/aboutPage',
       element: AboutPage,
     },
     {
-      path: "/*",
+      path: '/*',
       element: ErrorPage,
     },
   ];
