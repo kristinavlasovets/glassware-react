@@ -30,6 +30,7 @@ export const Home = () => {
                 src={item.src}
                 price={item.price}
                 inStock={item.inStock}
+                quantity={item.quantity}
                 description={item.description}
               />
             ))}

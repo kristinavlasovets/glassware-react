@@ -6,32 +6,17 @@
   font-family: "Shippori Antique", sans-serif;
 }
 
-.product_page_carousel {
-  margin: 50px 15px 0px 15px;
-  height: 305px;
-  width: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.product_page_carousel_img {
-  width: 100%;
-  display: block;
-}
-
 .product_page_card {
-  width: 1027px;
+  width: 1440px;
   height: 560px;
   display: flex;
-  padding: 48px 0px 0px 25px;
-
+  padding: 50px 0px 0px 25px;
   margin-bottom: 72px;
 }
 
 .product_page_img_wrapper {
   width: 610px;
-  height: 511px;
+  height: 600px;
 }
 
 .product_page_img {
@@ -41,7 +26,7 @@
 }
 
 .product_page_info {
-  width: 450px;
+  width: 800px;
   margin-left: 50px;
   display: flex;
   flex-direction: column;
@@ -78,9 +63,9 @@
 
 .product_page_quantity_block {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin: 20px 80px 20px;
+  margin: 20px 0px 20px;
   font-family: 28px;
   color: rgb(161, 143, 122);
 }
@@ -88,6 +73,7 @@
 .product_page_quantity_block button {
   width: 40px;
   height: 40px;
+  margin: 0px 40px 0px;
   font-weight: 300;
   font-size: 24px;
   color: rgb(161, 143, 122);
@@ -103,7 +89,7 @@
 }
 
 .product_page_button {
-    width: 90%;
+    width: 80%;
     background-color:  rgb(112, 121, 154);
     color: #ffff;
     border: 2px solid  rgb(112, 121, 154);

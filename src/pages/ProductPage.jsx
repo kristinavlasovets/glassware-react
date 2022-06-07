@@ -8,31 +8,11 @@ export const ProductPage = ({props}) => {
   const params = useParams();
 
   const {state} = useLocation();
-  const {id, name, price, src, description} = state;
+  const {id, name, price, src, quantity, description} = state;
 
   return (
     <div className={IndexCSS.container}>
       <div className={ProductPageCSS.product_page}>
-        <div className="overlay"></div>
-
-        <div className={ProductPageCSS.product_page_carousel}>
-          <img
-            src={src}
-            alt="product"
-            className={ProductPageCSS.product_page_carousel_img}
-          />
-          <img
-            src={src}
-            alt="product"
-            className={ProductPageCSS.product_page_carousel_img}
-          />
-          <img
-            src={src}
-            alt="product"
-            className={ProductPageCSS.product_page_carousel_img}
-          />
-        </div>
-
         <div className={ProductPageCSS.product_page_card}>
           <div className={ProductPageCSS.product_page_img_wrapper}>
             <img
@@ -49,7 +29,7 @@ export const ProductPage = ({props}) => {
 
             <div className={ProductPageCSS.product_page_size_wrapper}>
               <p>Available:</p>
-              <p>42 it.</p>
+              <p>{quantity} it.</p>
             </div>
 
             <div className={ProductPageCSS.product_page_price}>

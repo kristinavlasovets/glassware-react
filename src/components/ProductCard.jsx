@@ -3,7 +3,9 @@ import {Link} from 'react-router-dom';
 import ProductCardCSS from '../styles/components/productCard.module.css';
 import {Button} from './Button';
 
-export const ProductCard = (props) => {
+export const ProductCard = (props, {itemsCount}) => {
+
+
   return (
     <div className={ProductCardCSS.product_card_wrapper}>
       <div className={ProductCardCSS.product_card_img}>
@@ -14,6 +16,7 @@ export const ProductCard = (props) => {
             name: props.name,
             price: props.price,
             src: props.src,
+            quantity: props.quantity,
             description: props.description,
           }}
         >
@@ -35,6 +38,7 @@ export const ProductCard = (props) => {
             name: props.name,
             price: props.price,
             src: props.src,
+            quantity: props.quantity,
             description: props.description,
           }}
           style={{textDecoration: 'none', color: 'rgb(161, 143, 122)'}}
@@ -44,6 +48,7 @@ export const ProductCard = (props) => {
         <h2>${props.price}</h2>
       </div>
       <Button
+        onClick={() => itemsCount()}
         text={props.inStock ? 'Add to  cart' : 'Out of stock'}
         className={ProductCardCSS.product_button}
       />
